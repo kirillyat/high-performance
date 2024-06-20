@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'LockFreeSet'
+version '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "org.jetbrains.kotlinx:lincheck:2.22"  
+    testImplementation "junit:junit:4.13"
+}
